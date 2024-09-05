@@ -1,4 +1,4 @@
-# **Customer_Segmentation_RFM_Analysis**
+# **Customer Segmentation using RFM Metrics**
 ## Objective
 Management requested a method to rank and group customers based on their purchasing behaviour. The goal is to segment customers based on their value and engagement levels to identify high-value customers, at-risk customers, and those needing re-engagement.
 
@@ -65,7 +65,7 @@ Customers were ranked and grouped using the RFM model (Recency, Frequency, Monet
 - #### **Top Customers :** Represent 18% of the customer base, with an average spending of $7,062 and an average last purchase within 15 days.
 - #### **At Risk & Immediate Attention Customers :** Comprise 51% of the customer base, spending an average of $379, with an average last purchase 162 days ago.
 
-  ![]
+  ![Final_Report_Image](https://github.com/codenirmal99/Customer_Segmentation_RFM_Analysis/blob/main/Final_Report_Image.jpg)
 ## Recommendations
 - #### **Targeted Campaigns :**
     -   Develop re-engagement strategies with tailored incentives for at-risk customers.
