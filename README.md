@@ -1,6 +1,14 @@
 # **Customer_Segmentation_RFM_Analysis**
-## Overview
-This project focuses on segmenting customers using the RFM (Recency, Frequency, Monetary) model. By analyzing transaction data, we identified key customer segments that can be targeted for marketing campaigns and business strategies.
+## Objective
+Management requested a method to rank and group customers based on their purchasing behaviour. The goal is to segment customers based on their value and engagement levels to identify high-value customers, at-risk customers, and those needing re-engagement.
+
+Customer Segmentation Technique : 
+Customers were ranked and grouped using the RFM model (Recency, Frequency, Monetary), which evaluates the recency of their last purchase, how frequently they purchase, and their total monetary value. This allows for identifying the best customers and targeting them in marketing campaigns and also helps identifying at risk customers who require immediate attention.
+
+### Prerequisites
+- MS-Excel
+- MS-PowerPoint
+<br />
 
 ## Data and Methodology
 ### 1. Data Preparation
@@ -18,7 +26,6 @@ This project focuses on segmenting customers using the RFM (Recency, Frequency, 
     
  - #### Monetary Calculation:
     - The monetary value was calculated by summing the total amount spent by each customer.
-    <br />
     
 ### 2. RFM Scoring
 - #### Frequency & Monetary Scores:
@@ -35,28 +42,32 @@ This project focuses on segmenting customers using the RFM (Recency, Frequency, 
       
 - #### RFM Score:
     - The overall RFM total was computed by summing the Recency, Frequency, and Monetary scores.
-    - Again, The PERCENTRANK.INC() function was applied to RFM Total Column and the output was multiplied by 10 to get the Final RFM Score which we will use for customer segmentation.
+    - Again, The PERCENTRANK.INC() function was applied to the RFM Total Column and the output was multiplied by 10 to get the Final RFM Score which we will use for customer segmentation.
 
 ### 3. Customer Segmentation
 - #### Segmentation Criteria:
     - Customers were segmented into categories based on their RFM scores:
-        - Top Customers: High scores across Recency, Frequency, and Monetary metrics.
-        - Loyal Customers: Consistent purchasers with moderate spending.
-        - At-Risk Customers: Customers with low recency and spending, requiring re-engagement.
-        - Immediate Attention Customers:
+        - ##### Top Customers (Score: 10-8) : High scores across Recency, Frequency, and Monetary metrics.
+        - ##### Loyal Customers (Score: 7-5) : Consistent purchasers with moderate spending.
+        - ##### At-Risk Customers (Score: 4-2) : Customers with low recency and spending, requiring re-engagement.
+        - ##### Immediate Attention Customers (Score: 1-0) : Customers with recent activity but low frequency and spending, needing targeted follow-up to boost engagement.
           
 - #### Customer Segments Filtering:
-    - VLOOKUP() was used to assign customers to specific segments based on their RFM score.
+    - VLOOKUP() function was used to assign customers to specific segments based on their RFM score.
     - Additionally, By applying filters on the RFM score column, we can classify the Top Customers & At Risk / Immediate Attention Customers by selecting top values (e.g. 10, 9, 8) and lower values (e.g.4,3,2,1,0)
       
 
 ### 4. Handling Missing Data:
 - Customers with missing IDs and associated data were excluded to prevent skewed analysis results.
+<br />
       
 ## Key Insights
-- #### **Top Customers:** Represent 18% of the customer base, with an average spending of $7,062 and an average last purchase within 15 days.
-- #### **At Risk & Immediate Attention Customers:** Comprise 51% of the customer base, spending an average of $379, with an average last purchase 162 days ago.
-  
+- #### **Top Customers :** Represent 18% of the customer base, with an average spending of $7,062 and an average last purchase within 15 days.
+- #### **At Risk & Immediate Attention Customers :** Comprise 51% of the customer base, spending an average of $379, with an average last purchase 162 days ago.
+
+  ![]
 ## Recommendations
-- #### **Targeted Campaigns:** Develop re-engagement strategies with tailored incentives for at-risk customers.
-- #### **Top Customer Retention:** Analyze top and loyal customers further to explore opportunities for increasing their lifetime value.
+- #### **Targeted Campaigns :**
+    -   Develop re-engagement strategies with tailored incentives for at-risk customers.
+- #### **Top Customer Retention :**
+    -  Analyze top and loyal customers further to explore opportunities for increasing their lifetime value.
